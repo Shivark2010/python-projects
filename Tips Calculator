@@ -1,0 +1,7 @@
+bill=input("What was the total bill? ")
+new_bill=float(bill)
+tips_percentage=float(input("What percentage tip would you like to give? 10,12 or 15? "))
+ppl=float(input("How many people to split the bill? "))
+tips=float((tips_percentage/100)*new_bill + new_bill)
+each_bill=round(tips)
+print(f"Each person should pay:{each_bill}.")
